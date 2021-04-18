@@ -1,0 +1,30 @@
+*{
+    box-sizing: border-box;
+  }
+  body{  
+    width:80%;
+    height:500px;
+    margin:20px auto;
+    padding:20px;
+    border:2px solid black;
+    outline:2px dotted black;  
+  }
+  div{
+    width:50px;
+    height:50px;
+    display:inline-flex;
+    flex-wrap: wrap;
+    border-radius:50%;
+    margin:10px;
+    text-align:center;
+    position:relative;
+    animation: example 5s linear 2s infinite alternate;
+  }
+  
+  @keyframes example {
+    0%   { left:0px; top:0px;}
+    25%  { left:20px; top:0px;}
+    50%  { left:20px; top:20px;}
+    75%  { left:0px; top:20px;}
+    100% { left:0px; top:0px;}
+  }
